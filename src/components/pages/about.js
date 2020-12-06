@@ -1,5 +1,5 @@
 import React from "react";
-import profilePicture from "../../../static/assets/images/bio/Austin-login.jpg";
+import profilePicture from "../../../static/assets/images/bio/austin-login-changes.jpg";
 
 export default function() {
   return (
