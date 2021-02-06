@@ -4,7 +4,38 @@
 
     .filter-links {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        padding-top: 55px;
+        padding-bottom: 65px;
+        margin-left: 600px;
+        margin-right: 600px;
+        font-size: 0.9375rem;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.4;
+        letter-spacing: 0.115em;
+        text-align: center;
+        text-transform: uppercase;
+        
+
+        .filter-link {
+            cursor: pointer;
+            
+            
+
+            a { 
+                color: black;
+                text-decoration: none;
+            }
+    
+            &:hover {
+                border-bottom: 1px solid black;
+                letter-spacing: 2px;
+                transition: 0.5s ease-in-out;
+            }
+        }
+        
+
 
         .btn {
             width: 100%;

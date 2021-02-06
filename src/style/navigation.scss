@@ -1,54 +1,81 @@
-.nav-wrapper {
+.nav-container {
     display: flex;
-    justify-content: space-between;
-    padding: 30px;
-}
+    padding: 15px;
 
-.left-side {
-    display: flex;
-}
+    .nav-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        border-bottom: 1px black solid;
+    }
 
-.right-side {
-    font-family: 'Oxygen Mono', monospace;
+    .left-side {
+        display: flex;
+        width: 500px;
+        align-items: center;
+    }
 
-    a {
-        margin-left: 15px;
-        cursor: pointer;
-        color: $teal;
-        transition: 0.5 ease-in-out;
+    .center-title {
+        display: flex;
+        width: 300px;
+        font-family: 'Playfair Display', serif;
+        font-weight: 900;
+        letter-spacing: 5px;
+        font-size: 2rem;
+        text-transform: uppercase;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
 
-        &:hover {
-            color: $dark-teal;
+    .right-side {
+        display: flex;
+        width: 500px;
+        justify-content: flex-end;
+        align-items: center;
+        font-weight: 900;
+        font-size: 1.5em;
+        
+
+        a {
+            margin-left: 15px;
+            cursor: pointer;
+            color: $charcoal;
+            transition: 0.5 ease-in-out;
+
+            &:hover {
+                color: $charcoal;
+            }
         }
     }
-}
 
-.nav-link-wrapper {
-    font-family: 'Playfair Display', serif;
-    height: 22px;
-    border-bottom: 1px solid transparent;
-    transition: 0.5s ease-in-out;
-    margin-right: 20px;
-    text-transform: uppercase;
-    font-size: 0.9rem;
+    .nav-link-wrapper {
+        font-family: 'Lato', sans-serif;
+        height: 22px;
+        border-bottom: 1px solid transparent;
+        transition: 0.5s ease-in-out;
+        margin-right: 20px;
+        text-transform: uppercase;
+        font-size: 0.9rem;
 
-    a {
-        color: black;
-        text-decoration: none;
-    &:hover { color: $grey;
-    }
-    }
+        a {
+            color: black;
+            text-decoration: none;
+        &:hover { color: $grey;
+        }
+        }
 
-    &:hover {
-        border-bottom: 1px solid black;
-        letter-spacing: 1px;
-    }
+        &:hover {
+            border-bottom: 1px solid black;
+            letter-spacing: 1px;
+        }
 
-    .nav-link-active {
-        border-bottom: 1px solid black;
-        color: $grey;
-        padding-bottom: 2px;
-        letter-spacing: 1px;
+        .nav-link-active {
+            border-bottom: 1px solid black;
+            color: $grey;
+            padding-bottom: 5px;
+            letter-spacing: 1px;
+        }
     }
 }
 

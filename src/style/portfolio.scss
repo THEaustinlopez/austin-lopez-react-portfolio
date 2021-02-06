@@ -1,14 +1,19 @@
 .portfolio-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    //align-content: space-around;
+    //justify-content: space-between;
+    
 
     .portfolio-item-wrapper {
         position: relative;
+        padding: 10px;
     }
         .portfolio-img-background {
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            background-color: #f2f2f2;
             height: 350px;
             width: 100%;
         }
@@ -26,7 +31,7 @@
             padding-right: 100px;
 
             .subtitle {
-                font-family: 'Oxygen Mono', monospace;
+                font-family: 'Lato', sans-serif;
                 transition: 1s ease-in-out;
                 color: transparent;
 
@@ -34,7 +39,7 @@
         }
 
         .img-text-wrapper:hover .subtitle {
-            color: $teal;
+            color: white;
         }
 
         .logo-wrapper img {

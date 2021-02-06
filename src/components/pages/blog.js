@@ -136,10 +136,11 @@ class Blog extends Component {
 
         <div className="blog-title">
           <h1>The Blog</h1>
-          <h2>"There is nothing else but right now."</h2>
         </div>
-
-
+        <div className="blog-subtitle">
+          <h2>Thoughts reside here</h2>
+        </div>
+        
         {this.props.loggedInStatus === "LOGGED_IN" ? (
           <div className="new-blog-link">
             <a onClick={this.handleNewBlogClick}>
